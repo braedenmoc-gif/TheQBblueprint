@@ -28,7 +28,7 @@ export default function Contact() {
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-white/10 bg-nearblack text-electric"><Mail className="h-5 w-5" /></div>
                 <div>
                   <h3 className="font-headline text-sm font-semibold uppercase tracking-wider2 text-offwhite">Email</h3>
-                  <p className="text-sm text-silver">{SUPPORT_EMAIL || 'Support email coming soon'}</p>
+                  {SUPPORT_EMAIL ? <a href={`mailto:${SUPPORT_EMAIL}`} className="break-all text-sm text-electric hover:underline">{SUPPORT_EMAIL}</a> : <p className="text-sm text-silver">Support email coming soon</p>}
                 </div>
               </div>
               <div className="flex gap-4">

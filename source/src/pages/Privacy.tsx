@@ -31,7 +31,7 @@ export default function Privacy() {
               <p>Our resources are designed for high school and college athletes. We do not knowingly collect personal information from children under 13.</p>
             </Block>
             <Block title="7. Contact">
-              <p>Questions about this policy? Use the Contact page.</p>
+              <p>Questions about this policy? Email support.theqbblueprint.org@gmail.com or use the Contact page.</p>
             </Block>
           </div>
         </div>
