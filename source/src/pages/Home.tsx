@@ -14,6 +14,8 @@ import {
 import { ProductCard, ProductMockup } from '@/components/ProductMockup';
 import { products, pillars, weeks, faqs, heroImages, imgSrc } from '@/data/products';
 import { useState } from 'react';
+import { CheatSheetSignup } from '@/components/CheatSheetSignup';
+import { CHEAT_SHEET_URL } from '@/data/site';
 
 
 export default function Home() {
@@ -399,6 +401,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {CHEAT_SHEET_URL && (
+        <section className="bg-nearblack py-16">
+          <div className="container-x"><CheatSheetSignup /></div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="bg-charcoal py-24">

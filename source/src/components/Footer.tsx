@@ -7,6 +7,7 @@ const cols = [
       { label: 'The Program', to: '/program' },
       { label: 'Training Resources', to: '/resources' },
       { label: 'Film Room', to: '/film-room' },
+      { label: 'Articles', to: '/articles' },
       { label: 'Complete Bundle', to: '/products/complete-qb-development-bundle' },
     ],
   },

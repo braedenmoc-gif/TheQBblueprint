@@ -10,6 +10,8 @@ import Contact from '@/pages/Contact';
 import Privacy from '@/pages/Privacy';
 import Terms from '@/pages/Terms';
 import ProductDetail from '@/pages/ProductDetail';
+import Articles from '@/pages/Articles';
+import Article from '@/pages/Article';
 
 export default function App() {
   return (
@@ -26,6 +28,8 @@ export default function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/products/:slug" element={<ProductDetail />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/articles/:slug" element={<Article />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </Layout>
