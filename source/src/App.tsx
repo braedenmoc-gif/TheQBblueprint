@@ -11,6 +11,7 @@ import Privacy from '@/pages/Privacy';
 import Terms from '@/pages/Terms';
 import ProductDetail from '@/pages/ProductDetail';
 import Articles from '@/pages/Articles';
+import CheatSheet from '@/pages/CheatSheet';
 import Article from '@/pages/Article';
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/terms" element={<Terms />} />
             <Route path="/products/:slug" element={<ProductDetail />} />
             <Route path="/articles" element={<Articles />} />
+            <Route path="/cheat-sheet" element={<CheatSheet />} />
             <Route path="/articles/:slug" element={<Article />} />
             <Route path="*" element={<Home />} />
           </Routes>
