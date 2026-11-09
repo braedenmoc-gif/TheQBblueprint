@@ -4,11 +4,11 @@ import { Menu, X, ChevronRight } from 'lucide-react';
 
 const nav = [
   { label: 'Home', to: '/' },
+  { label: 'My Story', to: '/about' },
   { label: 'The Program', to: '/program' },
   { label: 'Training Resources', to: '/resources' },
   { label: 'Free QB Lab', to: '/film-room' },
   { label: 'Articles', to: '/articles' },
-  { label: 'My Story', to: '/about' },
   { label: 'FAQ', to: '/faq' },
 ];
 
