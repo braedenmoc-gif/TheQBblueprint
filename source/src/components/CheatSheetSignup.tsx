@@ -11,7 +11,7 @@ export function CheatSheetSignup({ compact = false }: { compact?: boolean }) {
           <div>
             <p className="eyebrow mb-1">Free download</p>
             <h3 className="font-display text-3xl uppercase leading-none text-offwhite sm:text-4xl">The QB Coverage Cheat Sheet</h3>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-silver">Every common coverage on one page: what it looks like before the snap and where to throw against it. Free, and you'll get one quarterback tip a week by email.</p>
+            <p className="mt-2 max-w-xl text-sm leading-relaxed text-silver">The five most common coverages on one page: what each looks like before the snap and where to throw against it. Free. Just enter your email on the next page and it's yours.</p>
           </div>
         </div>
         <a href={CHEAT_SHEET_URL} className="btn-primary shrink-0">Get it free <ArrowUpRight className="h-4 w-4" /></a>

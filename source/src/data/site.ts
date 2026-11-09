@@ -4,4 +4,4 @@ export const SUPPORT_EMAIL = 'support.theqbblueprint.org@gmail.com';
 
 // Link to the free cheat sheet on Payhip (a $0 product, so Payhip collects the
 // buyer's email). Leave empty and the signup boxes stay hidden.
-export const CHEAT_SHEET_URL = '';
+export const CHEAT_SHEET_URL = 'https://payhip.com/b/seBFy';
