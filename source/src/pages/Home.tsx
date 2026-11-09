@@ -283,7 +283,7 @@ export default function Home() {
               <div className="relative aspect-[16/11] overflow-hidden rounded-xl border border-white/10">
                 <img src="/images/qb-film.jpg" alt="Quarterback rolling out with the football" className="h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-nearblack/70 via-transparent to-transparent" />
-                <div className="absolute bottom-5 left-5">
+                <div className="absolute bottom-5 right-5">
                   <span className="font-headline text-xs uppercase tracking-widest2 text-offwhite/70">Pre-snap · Post-snap · Confirm</span>
                 </div>
               </div>
@@ -300,7 +300,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-grid-faint [background-size:48px_48px] opacity-40" />
         <div className="container-x relative">
           <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr]">
-            <div className="reveal relative flex h-[420px] items-center justify-center">
+            <div className="reveal qbb-stack relative flex h-[420px] items-center justify-center">
               <div className="absolute left-[12%] top-1/2 w-40 -translate-y-1/2 -rotate-6 transition-transform duration-500 hover:-rotate-3">
                 <ProductMockup product={individuals[2]} size="sm" />
               </div>

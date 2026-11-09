@@ -22,19 +22,19 @@ export function ProductMockup({
       <div className="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded-md bg-white/[0.04] border border-white/[0.06]" />
       <div className="absolute inset-0 translate-x-[3px] translate-y-[3px] rounded-md bg-white/[0.06] border border-white/[0.08]" />
       <div className={`relative h-full w-full rounded-md bg-gradient-to-br ${product.cover.hue} border border-white/10 overflow-hidden flex flex-col`}>
-        <div className="flex items-center justify-between px-4 pt-4">
-          <span className="font-headline text-[10px] font-semibold uppercase tracking-widest2 text-white/70">QB Blueprint</span>
-          <span className="font-headline text-[10px] font-semibold uppercase tracking-widest2 text-white/40">PDF</span>
+        <div className="flex items-center justify-between px-4 pt-4" style={size === 'sm' ? { padding: '8px 8px 0' } : undefined}>
+          <span className="font-headline text-[10px] font-semibold uppercase tracking-widest2 text-white/70" style={size === 'sm' ? { fontSize: '7px', letterSpacing: '0.12em' } : undefined}>QB Blueprint</span>
+          {size !== 'sm' && <span className="font-headline text-[10px] font-semibold uppercase tracking-widest2 text-white/40">PDF</span>}
         </div>
         <div className="flex flex-1 flex-col items-center justify-center px-4 text-center">
           <div className="mb-3 h-px w-10 bg-white/30" />
-          <span className="font-display text-2xl sm:text-3xl uppercase leading-none text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]">{product.cover.label}</span>
+          <span className="font-display text-2xl sm:text-3xl uppercase leading-none text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]" style={size === 'sm' ? { fontSize: '20px' } : undefined}>{product.cover.label}</span>
           <div className="mt-3 h-px w-10 bg-white/30" />
         </div>
-        <div className="px-4 pb-4">
-          <div className="flex items-end justify-between gap-2">
-            <p className="font-headline text-[9px] uppercase tracking-widest2 text-white/50 leading-tight">{product.tagline}</p>
-            <span className="font-headline text-lg font-bold text-white">${product.price}</span>
+        <div className="px-4 pb-4" style={size === 'sm' ? { padding: '0 8px 8px' } : undefined}>
+          <div className="flex items-end justify-between gap-2" style={size === 'sm' ? { justifyContent: 'flex-end' } : undefined}>
+            {size !== 'sm' && <p className="font-headline text-[9px] uppercase tracking-widest2 text-white/50 leading-tight">{product.tagline}</p>}
+            <span className="font-headline text-lg font-bold text-white" style={size === 'sm' ? { fontSize: '13px' } : undefined}>${product.price}</span>
           </div>
         </div>
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent" />

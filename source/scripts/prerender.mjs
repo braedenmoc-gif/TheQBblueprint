@@ -8,8 +8,20 @@ const routes = ['about', 'resources', 'program', 'film-room', 'faq', 'contact', 
   'products/quarterback-playbook', 'products/qb-film-room-guide', 'products/quarterback-journal', 'products/complete-qb-development-bundle'];
 for (const r of routes) { mkdirSync(`dist/${r}`, { recursive: true }); copyFileSync('dist/index.html', `dist/${r}/index.html`); }
 
+
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const shell = readFileSync('dist/index.html', 'utf8');
+const seo = JSON.parse(readFileSync('src/data/seo.json', 'utf8'));
+const withMeta = (html, title, desc, url) => html
+  .replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
+  .replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/>/, `<meta name="description" content="${esc(desc)}" />`)
+  .replace(/<meta property="og:title" content="[^"]*" \/>/, `<meta property="og:title" content="${esc(title)}" />`)
+  .replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/>/, `<meta property="og:description" content="${esc(desc)}" />`)
+  .replace('</head>', `<link rel="canonical" href="${url}" />\n</head>`);
+for (const [path, m] of Object.entries(seo)) {
+  const file = path === '/' ? 'dist/index.html' : `dist${path}/index.html`;
+  writeFileSync(file, withMeta(shell, m.title, m.description, base + (path === '/' ? '/' : path)));
+}
 for (const a of articles) {
   const url = `${base}/articles/${a.slug}`;
   const body = [`<article><h1>${esc(a.title)}</h1><p>${esc(a.intro)}</p>`,

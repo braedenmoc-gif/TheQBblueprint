@@ -46,3 +46,5 @@
     background-size: 64px 64px;
   }
 }
+
+@media (max-width: 1023px) { .qbb-stack { height: 240px !important; } }
