@@ -13,6 +13,7 @@ import ProductDetail from '@/pages/ProductDetail';
 import Articles from '@/pages/Articles';
 import CheatSheet from '@/pages/CheatSheet';
 import Article from '@/pages/Article';
+import Affiliates from '@/pages/Affiliates';
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="/products/:slug" element={<ProductDetail />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/cheat-sheet" element={<CheatSheet />} />
+            <Route path="/affiliates" element={<Affiliates />} />
             <Route path="/articles/:slug" element={<Article />} />
             <Route path="*" element={<Home />} />
           </Routes>

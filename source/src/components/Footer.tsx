@@ -17,6 +17,7 @@ const cols = [
       { label: 'My Story', to: '/about' },
       { label: 'FAQ', to: '/faq' },
       { label: 'Contact', to: '/contact' },
+      { label: 'Become an Affiliate', to: '/affiliates' },
     ],
   },
   {

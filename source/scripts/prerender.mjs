@@ -4,7 +4,7 @@
 import { mkdirSync, copyFileSync, writeFileSync, readFileSync } from 'node:fs';
 const base = 'https://theqbblueprint.org';
 const articles = JSON.parse(readFileSync('src/data/articles.json', 'utf8'));
-const routes = ['about', 'resources', 'program', 'film-room', 'faq', 'contact', 'privacy', 'terms', 'articles', 'cheat-sheet',
+const routes = ['about', 'resources', 'program', 'film-room', 'faq', 'contact', 'privacy', 'terms', 'articles', 'cheat-sheet', 'affiliates',
   'products/quarterback-playbook', 'products/qb-film-room-guide', 'products/quarterback-journal', 'products/complete-qb-development-bundle'];
 for (const r of routes) { mkdirSync(`dist/${r}`, { recursive: true }); copyFileSync('dist/index.html', `dist/${r}/index.html`); }
 
