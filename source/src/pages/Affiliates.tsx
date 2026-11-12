@@ -7,7 +7,7 @@ const perks = [
   { icon: BadgePercent, title: '30% commission', text: 'Earn 30% of every sale through your link. That is about $15 on every Complete Bundle.' },
   { icon: Gift, title: 'Free bundle', text: 'Get all three guides free so you know exactly what you are recommending.' },
   { icon: Users, title: 'A code for your followers', text: 'Your own discount code, so your audience gets 10% off.' },
-  { icon: Link2, title: 'Tracking and payouts handled', text: 'Your link, sales and payouts are tracked through Payhip, our store platform.' },
+  { icon: Link2, title: 'Tracked sales, monthly payouts', text: 'Payhip, our store platform, tracks every sale from your link. We pay your commission by PayPal each month.' },
 ];
 
 const fits = [
@@ -22,7 +22,7 @@ const fits = [
 const steps = [
   { n: '01', title: 'Apply', text: 'Send a short note with your account or show. It takes two minutes.' },
   { n: '02', title: 'Get the bundle', text: 'We send you all three guides free to look through.' },
-  { n: '03', title: 'Share and earn', text: 'You get your link and code. Post when it fits your content and earn on every sale.' },
+  { n: '03', title: 'Share and earn', text: 'Sign up through our Payhip affiliate link to get your tracking link and code. Post when it fits your content, and get paid by PayPal each month.' },
 ];
 
 export default function Affiliates() {
